@@ -17,7 +17,7 @@ sub arguments ()
 if (@ARGV == 1 || @ARGV == 2) {
 	if (-f $ARGV[0]) {
 		$key = $ARGV[1];
-		if ($key eq "") {
+		if (@ARGV == 1) {
 		$key = "0xfe";
 			}
 		return $ARGV[0];
